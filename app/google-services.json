@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "156737601243",
+    "firebase_url": "https://firemessagebyjeremy.firebaseio.com",
+    "project_id": "firemessagebyjeremy",
+    "storage_bucket": "firemessagebyjeremy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156737601243:android:bcde68132c62deb1",
+        "android_client_info": {
+          "package_name": "android.com.firemessage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "156737601243-u4hbr4de31r557b8mmdgs434g655uktl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5BMon75OmXicnnttt9Bi5LeJyEQfTt3E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "156737601243-u4hbr4de31r557b8mmdgs434g655uktl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
