@@ -1,6 +1,7 @@
 package android.com.firemessage
 
 import android.app.Activity
+import android.com.firemessage.util.FirestoreUtil
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -42,9 +43,11 @@ class SignInActivity : AppCompatActivity() {
 
             if (resultCode == Activity.RESULT_OK){
                 val progressDialog = indeterminateProgressDialog("Setting up your account")
-                //TODO: Init user in Firestore
-                startActivity(intentFor<MainActivity>().newTask().clearTask())
-                progressDialog.dismiss()
+                FirestoreUtil.initCurrentUserIfFirstTime {
+                    startActivity(intentFor<MainActivity>().newTask().clearTask())
+                    progressDialog.dismiss()
+                }
+
             }
             else if (resultCode == Activity.RESULT_CANCELED){
                 if (response == null)return
